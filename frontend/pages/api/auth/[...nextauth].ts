@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import NextAuth, { NextAuthOptions } from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
 
-import mongoClient from '@/lib/mongoClient';
+import mongoClient from '@/src/lib/mongoClient';
 dotenv.config();
 
 const providers = [];
