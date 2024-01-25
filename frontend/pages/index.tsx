@@ -6,7 +6,7 @@ export default function HOME() {
   return (
     <>
       <MainSearchBar />
-      <CategoryFilters />
+      <CategoryFilters cols={4} />
       <StoreList />
     </>
   );
