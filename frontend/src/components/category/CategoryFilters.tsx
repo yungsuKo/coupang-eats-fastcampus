@@ -10,9 +10,13 @@ export const CategoryFilters = ({ cols }: { cols: number }) => {
     <div className={`grid ${getGridCol(cols)} gap-4 p-4`}>
       {Object.values(StoreCategory).map((category) => {
         return (
-          <Link href={`/category/${category}`} key={category}>
+          <Link
+            href={`/category/${category}`}
+            key={category}
+            className="grid place-items-stretch text-center"
+          >
             <Image
-              className="round-full"
+              className="rounded-full"
               src={StoreCategoryImages[category]}
               alt={category}
               width={500}
