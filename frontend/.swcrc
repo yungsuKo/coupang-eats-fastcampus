@@ -1,0 +1,7 @@
+{
+  "jwc": {
+    "experimental": {
+      "swcPlugins": [["@swc-jotai/react-refresh", {}]]
+    }
+  }
+}
