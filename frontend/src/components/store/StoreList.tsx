@@ -1,5 +1,5 @@
 import { useStores } from '@/pages/queries/stores';
-import { StoreFilter } from './StoreFilter';
+import { StoreFilters } from './StoreFilters';
 import { StoreItem } from './StoreItem';
 
 export const StoreList = () => {
@@ -9,7 +9,7 @@ export const StoreList = () => {
 
   return (
     <div>
-      <StoreFilter />
+      <StoreFilters />
       {data.pages.map((page) =>
         page.map((store) => <StoreItem key={store._id} store={store} />)
       )}
