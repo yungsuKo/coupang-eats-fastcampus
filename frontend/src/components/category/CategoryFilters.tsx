@@ -5,7 +5,6 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 export const CategoryFilters = ({ cols }: { cols: number }) => {
-  console.log(Object.values(StoreCategory).map((dd) => dd));
   return (
     <div className={`grid ${getGridCol(cols)} gap-4 p-4`}>
       {Object.values(StoreCategory).map((category) => {
