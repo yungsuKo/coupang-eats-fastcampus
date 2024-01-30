@@ -1,5 +1,6 @@
 import {
   FetchNextPageOptions,
+  InfiniteData,
   InfiniteQueryObserverResult,
 } from '@tanstack/react-query';
 import { useEffect, useRef } from 'react';
@@ -9,7 +10,7 @@ export function useInfiniteScroll<TData, TScroll>(
   isFetching: boolean,
   fetchNextPage: (
     options?: FetchNextPageOptions
-  ) => Promise<InfiniteQueryObserverResult<TData[], TError>>
+  ) => Promise<InfiniteQueryObserverResult<InfiniteData<TData[]>, TError>>
 ) {
   const loader = useRef<HTMLDivElement>(null);
 

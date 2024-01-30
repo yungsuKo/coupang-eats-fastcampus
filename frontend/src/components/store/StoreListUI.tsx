@@ -9,14 +9,14 @@ export const StoreListUI = ({
   isFetching,
   loader,
 }: {
-  data: InfiniteData<Store[]>;
+  data?: InfiniteData<Store[]>;
   isFetching: boolean;
   loader: RefObject<HTMLDivElement>;
 }) => {
   return (
     <div>
       <StoreFilters />
-      {data.pages.map((page) =>
+      {data?.pages.map((page) =>
         page.map((store) => <StoreItem key={store._id} store={store} />)
       )}
       {!isFetching && <div ref={loader} />}
