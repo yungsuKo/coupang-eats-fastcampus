@@ -28,9 +28,9 @@ export default function Search() {
         <CategoryFilters cols={2} />
       ) : (
         <>
-          {data?.map((store) => {
-            <StoreItem key={store._id} store={store} />;
-          })}
+          {data?.map((store) => (
+            <StoreItem key={store._id} store={store} />
+          ))}
         </>
       )}
     </>
