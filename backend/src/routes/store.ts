@@ -80,7 +80,7 @@ router.get('/:id', async (req, res) => {
  */
 router.get('/search/:query', async (req, res) => {
   const { query } = req.params;
-
+  console.log('search requested 검색어 :', query);
   const querySchema = z.object({
     sort: Sort.optional().default('RATING'),
     maxDeliveryPrice: z.coerce.number().optional(),
@@ -126,7 +126,7 @@ router.get('/search/:query', async (req, res) => {
     });
 
     const docs = await Store.aggregate(aggregationPipeline);
-    res.send(200).json(docs);
+    res.status(200).json(docs);
   } catch (err) {
     console.log(err);
   }
