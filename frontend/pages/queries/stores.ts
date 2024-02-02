@@ -1,4 +1,4 @@
-import { useInfiniteQuery } from '@tanstack/react-query';
+import { useInfiniteQuery, useQuery } from '@tanstack/react-query';
 import { Store } from '../types/store';
 import { removeEmpty } from '@/src/lib/objectUtils';
 import { API_PATH } from '@/src/constants/api';
@@ -59,5 +59,16 @@ export const useCategoryStores = (category?: StoreCategory) => {
       if (lastPage.length === STORE_PER_PAGE) return lastPage.length;
     },
     initialPageParam: 1, // Add this line
+  });
+};
+
+export const useStore = ({ storeId }: { storeId: string }) => {
+  return useQuery<Store>({
+    queryKey: ['STORE', storeId],
+    queryFn: async () => {
+      if (!storeId) return null;
+      const response = await fetch(`${API_PATH}/store/${storeId}`);
+      return response.json();
+    },
   });
 };
