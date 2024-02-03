@@ -7,7 +7,7 @@ export type Store = {
   category: StoreCategory;
   reviewCount?: number;
   rating?: number;
-  delieveryPrice: number;
+  deliveryPrice: number;
   minimumOrderPrice: number;
   menus: string[];
 };
