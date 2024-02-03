@@ -12,7 +12,6 @@ export const StoreHeader = () => {
   const { data } = useStore({ storeId });
 
   if (!data) return null;
-  console.log(data);
 
   return (
     <div className="relative pb-16">
