@@ -29,25 +29,8 @@ router.get('/:menuId', async (req, res) => {
 router.get('/store/:storeId', async (req, res) => {
   const { storeId } = req.params;
   try {
-    const docs = await Store.aggregate([
-      {
-        $match: { _id: new ObjectId(storeId) },
-      },
-      {
-        $unwind: '$menus',
-      },
-      {
-        $lookup: {
-          from: 'menus',
-          localField: 'menus',
-          foreignField: '_id',
-          as: 'menu',
-        },
-      },
-    ]);
-    console.log(docs);
-
-    res.status(200).json(docs);
+    const menus = await Menu.find({ store: storeId });
+    res.status(200).json(menus);
   } catch (err) {
     console.error('store lookup failed');
     res.sendStatus(500);
