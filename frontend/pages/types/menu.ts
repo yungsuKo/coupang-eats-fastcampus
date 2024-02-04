@@ -1,10 +1,10 @@
 export type Menu = {
   _id: string;
   store: string;
-  name: string[];
+  name: string;
   price: number;
   description?: number;
-  images?: number;
+  images?: string[];
   category: number;
   isRecommended: string[];
   orderCount?: number;
