@@ -12,7 +12,7 @@ const expandImages = (images?: string[]) => {
 
 export const StoreItem = ({ store }: { store: Store }) => {
   const images = useMemo(() => expandImages(store.images), [store.images]);
-  console.log(store, 'store 데이터?');
+
   return (
     <Link className="m-4 block" href={`/store/${store._id}`}>
       <div className="grid grid-cols-3 grid-rows-2 gap-1">
@@ -41,7 +41,7 @@ export const StoreItem = ({ store }: { store: Store }) => {
           rating={store.rating}
           reviewCount={store.reviewCount}
         />
-        <span className="text-gray-500">배달비 {store.delieveryPrice}</span>
+        <span className="text-gray-500">배달비 {store.deliveryPrice}</span>
       </div>
     </Link>
   );
