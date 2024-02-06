@@ -6,6 +6,7 @@ import { BackButton } from '@/src/components/common/BackButton';
 import { Carousel } from '@/src/components/common/Carousel';
 import { useRouter } from 'next/router';
 import { MenuTitle } from '@/src/components/Menu/MenuTitle';
+import { MenuOrder } from '@/src/components/Menu/MenuOrder';
 
 export default function Menu() {
   const router = useRouter();
@@ -28,11 +29,12 @@ export default function Menu() {
       <div className="absolute left-5 top-3 z-50 text-3xl text-white">
         <BackButton href={`/store/${data.store}`} />
       </div>
-      <Carousel images={data.images} height="h-50" />
+      <Carousel images={data.images} height="h-60" />
       <MenuTitle
         title={data.name}
         description={data.description?.toString()}
       ></MenuTitle>
+      <MenuOrder menu={data}></MenuOrder>
     </>
   );
 }
