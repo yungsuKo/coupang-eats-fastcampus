@@ -6,9 +6,13 @@ export const MenuTitle = ({
   description?: string;
 }) => {
   return (
-    <div>
-      <h1 className="border-b border-b-gray-100 p-4 pb-8">{title}</h1>
-      {description && <p className="text-sm text-gray-700">{description}</p>}
+    <div className="border-b">
+      <h1 className="p-4 pb-0 text-xl ">{title}</h1>
+      {description && (
+        <p className="text-sm border-b-gray-100 text-gray-700 p-4 pt-0">
+          {description}
+        </p>
+      )}
     </div>
   );
 };
