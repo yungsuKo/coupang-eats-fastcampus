@@ -10,7 +10,7 @@ export type Menu = {
   orderCount?: number;
   likeCount?: number;
   dislikeCount?: number;
-  additionalSelection?: AdditionalSelection[];
+  additionalSelections?: AdditionalSelection[];
 };
 
 export type AdditionalSelection = {
