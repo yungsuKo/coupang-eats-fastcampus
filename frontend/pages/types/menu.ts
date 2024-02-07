@@ -15,7 +15,7 @@ export type Menu = {
 
 export type AdditionalSelection = {
   title: string;
-  option: AdditionalOption[];
+  options: AdditionalOption[];
   required?: boolean;
   multiple: boolean;
 };

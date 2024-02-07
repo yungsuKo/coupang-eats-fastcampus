@@ -69,7 +69,7 @@ export const MenuItem = ({ menu }: { menu: Menu }) => {
             onClick={(e) => {
               e.stopPropagation;
               e.preventDefault;
-              if (menu.additionalSelection?.length) {
+              if (menu.additionalSelections?.length) {
                 router.push(`/menu/${menu._id}`);
                 return;
               }
