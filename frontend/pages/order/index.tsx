@@ -17,7 +17,8 @@ import { MenuCounter } from '@/src/components/common/MenuCounter';
 
 export default function Order() {
   const cart = useAtomValue(cartAtom);
-  const { storeId } = cart;
+  let { storeId } = cart;
+  if (!storeId) storeId = '';
   const { data: store } = useStore({ storeId });
   const router = useRouter();
 
@@ -100,7 +101,7 @@ export default function Order() {
               <div className="flex justify-between">
                 <div>{KRW(getMenuPrice(menu))}</div>
                 <MenuCounter
-                  storeId={storeId}
+                  storeId={storeId ?? ''}
                   cartMenu={menu}
                   options={menu.options}
                   addMenuToCart={addMenuToCart}
