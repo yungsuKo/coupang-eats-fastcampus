@@ -15,6 +15,7 @@ dotenv.config();
 const PORT = process.env.PORT || 4000;
 
 const app = express();
+app.use(bodyParser.json());
 app.use(cors());
 
 app.use('/menu', menuRouter);
