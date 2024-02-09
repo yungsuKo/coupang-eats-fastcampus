@@ -36,7 +36,7 @@ export function MenuCounter({
             removeMenuFromCart({ menu: cartMenu.menu, options });
         }}
       >
-        {isCart ? <BsCartX /> : <BiMinus />}
+        {itemCount > 1 ? <BiMinus /> : <BsCartX />}
       </button>
       {itemCount}
       <button
