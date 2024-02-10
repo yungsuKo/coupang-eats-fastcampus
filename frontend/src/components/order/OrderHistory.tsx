@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 export const OrderHistory = ({ history }: { history: OrderHistoryType }) => {
   if (!history) return null;
+
   return (
     <div className="rounded-lg border border-gray-200 p-4">
       <div className="flex flex-row pb-2">
@@ -44,12 +45,14 @@ export const OrderHistory = ({ history }: { history: OrderHistoryType }) => {
       <div className="pb-4 pt-2">
         합계 : {KRW(getTotalPrice(history.menus))}
       </div>
-      <Link
-        href={`/order/${history._id}/review`}
-        className="grid place-items-center rounded-lg border border-blue-400 py-2 font-bold text-blue-400"
-      >
-        리뷰쓰기
-      </Link>
+      {!history.review && (
+        <Link
+          href={`/order/${history._id}/review`}
+          className="grid place-items-center rounded-lg border border-blue-400 py-2 font-bold text-blue-400"
+        >
+          리뷰쓰기
+        </Link>
+      )}
     </div>
   );
 };
