@@ -41,7 +41,7 @@ import { Review } from '../models/review';
     },
     {
       $group: {
-        _id: '$menus.id',
+        _id: '$menus._id',
         likeCount: {
           $sum: {
             $cond: {

@@ -650,8 +650,8 @@ import { connectToDB } from '../mongoClient';
         menus,
         rating: Math.floor(Math.random() * 5) + 1,
         review: faker.lorem.paragraph(),
-        image: faker.image.food(),
-        createdAt: faker.date.past(3).toISOString(),
+        mage: faker.image.urlLoremFlickr({ category: 'food' }),
+        createdAt: faker.date.past({ years: 3 }).toISOString(),
       };
     });
 
