@@ -61,6 +61,13 @@
 - React context의 추가 재렌더링 문제를 해결, 메모를 할 필요가 없으며 선언적 프로그래밍 모델을 유지.
 - 간단하게 `useState`를 대체할 수 있음.
 
+  #### 배경
+
+  - context의 re-rendering문제를 해결하기 위해 시작됨.
+    - context란? React앱 내에서 데이터를 전역으로 공유할 수 있는 방법을 제공함.
+    - Re-rendering 문제? React에서 컴포넌트의 state나 props가 변경되면, 해당 컴포넌트와 그 자식 컴포넌트들은 기본적으로 re-rendering됨. context를 사용할 때, context의 값이 변경되면 그 context를 사용하는 모든 컴포넌트가 re-render됨. 때로 원치않는 re-rendering을 초래하여 성능문제를 일으킬 수 있음.
+  - context api는 주로 앱 전체에 걸친 글로벌 상태관리에 적함함. 반면, jotai는 글로벌 상태관리 뿐만 아니라, 로컬 상태관리에도 유용하며, 더 세밀한 상태 관리를 가능하게 함.
+
   #### 사용방법
 
   - 동일한 컴포넌트 내에서 atom read, write를 수행하는 경우 단순성을 위해 결합된 useAtom훅을 사용
@@ -79,4 +86,10 @@
 
 ### UseQuery, Infinity Scroll
 
-- tanstack
+- tanstack : 데이터를 가져오기 위한 라이브러리. 서버 상태 가져오기, 캐싱, 동기화 및 업데이트를 손쉽게 수행할 수 있도록 해줌.
+
+#### 사용방법
+
+```
+
+```
