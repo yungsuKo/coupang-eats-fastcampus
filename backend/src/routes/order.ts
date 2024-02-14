@@ -28,7 +28,6 @@ router.post('/', async (req, res) => {
     ),
     store: z.string(),
   });
-  console.log(JSON.stringify(req.body));
   const parsedBody = bodySchema.safeParse(req.body);
 
   if (!parsedBody.success) {
@@ -93,7 +92,7 @@ router.get('/history', async (req, res) => {
     return;
   }
   const userId = user._id;
-
+  console.log('userId', userId);
   try {
     const docs = await Order.aggregate([
       { $match: { user: userId } },

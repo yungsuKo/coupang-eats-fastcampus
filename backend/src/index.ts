@@ -9,6 +9,7 @@ import reviewRouter from './routes/review';
 import storeRouter from './routes/store';
 import imageRouter from './routes/image';
 import userRouter from './routes/user';
+import testRouter from './routes/test';
 
 dotenv.config();
 
@@ -24,6 +25,7 @@ app.use('/review', reviewRouter);
 app.use('/store', storeRouter);
 app.use('/image', imageRouter);
 app.use('/user', userRouter);
+app.use('/test', testRouter);
 
 connectToDB();
 
