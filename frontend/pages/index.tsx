@@ -1,4 +1,4 @@
-import { priceAtom, readWriteAtom } from '@/src/atoms/text';
+import { priceAtom, readWriteAtom } from '@/src/atoms/test';
 import { CategoryFilters } from '@/src/components/category/CategoryFilters';
 import { BottomNav } from '@/src/components/common/BottomNav';
 import { MainSearchBar } from '@/src/components/search/MainSearchBar';

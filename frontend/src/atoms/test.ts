@@ -8,3 +8,5 @@ export const readWriteAtom = atom(
     // you can set as many atoms as you want at the same time
   }
 );
+
+export const countAtom = atom(1);
