@@ -22,7 +22,7 @@ export default function HOME() {
         </div>
         <MainSearchBar />
         <CategoryFilters cols={4} />
-        {/* <StoreList /> */}
+        <StoreList />
       </div>
       <BottomNav />
     </>
