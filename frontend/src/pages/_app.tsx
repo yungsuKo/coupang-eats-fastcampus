@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
-import { AuthRedirect } from '../src/components/common/AuthRedirect';
+import { AuthRedirect } from '../components/common/AuthRedirect';
 import './globals.css';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useState } from 'react';

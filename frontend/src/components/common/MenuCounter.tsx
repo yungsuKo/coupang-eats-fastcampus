@@ -1,4 +1,4 @@
-import { Menu, OrderOption } from '@/pages/types/menu';
+import { Menu, OrderOption } from '@/src/pages/types/menu';
 import { CartMenu } from '@/src/atoms/cart';
 import { BiMinus, BiPlus } from 'react-icons/bi';
 import { BsCartX } from 'react-icons/bs';
@@ -32,8 +32,12 @@ export function MenuCounter({
       <button
         className="pl-2 pr-3"
         onClick={() => {
-          if (confirm('선택한 메뉴를 삭제하시겠습니까?'))
+          if (itemCount > 1) {
             removeMenuFromCart({ menu: cartMenu.menu, options });
+          } else {
+            if (confirm('선택한 메뉴를 삭제하시겠습니까?'))
+              removeMenuFromCart({ menu: cartMenu.menu, options });
+          }
         }}
       >
         {itemCount > 1 ? <BiMinus /> : <BsCartX />}

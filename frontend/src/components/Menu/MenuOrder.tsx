@@ -1,4 +1,4 @@
-import { AdditionalOption, Menu, OrderOption } from '@/pages/types/menu';
+import { AdditionalOption, Menu, OrderOption } from '@/src/pages/types/menu';
 import { addMenuToCartAtom } from '@/src/atoms/cart';
 import { KRW } from '@/src/lib/currency';
 import { useSetAtom } from 'jotai';

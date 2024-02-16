@@ -1,4 +1,4 @@
-import { Menu, OrderOption } from '@/pages/types/menu';
+import { Menu, OrderOption } from '@/src/pages/types/menu';
 import { atom } from 'jotai';
 
 export type CartMenu = {

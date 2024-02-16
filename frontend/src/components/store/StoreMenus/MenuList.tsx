@@ -1,4 +1,4 @@
-import { useStoreMenus } from '@/pages/queries/menus';
+import { useStoreMenus } from '@/src/pages/queries/menus';
 import { storeIdAtom } from '@/src/atoms/storeId';
 import { getUniqueCategories } from '@/src/lib/getUniqueCategories';
 import { useAtomValue } from 'jotai';

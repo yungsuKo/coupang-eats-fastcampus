@@ -1,5 +1,5 @@
-import { useUserById } from '@/pages/queries/user';
-import { Review } from '@/pages/types/review';
+import { useUserById } from '@/src/pages/queries/user';
+import { Review } from '@/src/pages/types/review';
 import { getDayDiff } from '@/src/lib/date';
 import { hideName } from '@/src/lib/name';
 import { StarRating } from '../../common/StarRating';

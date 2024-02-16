@@ -1,4 +1,4 @@
-import { Menu } from '@/pages/types/menu';
+import { Menu } from '@/src/pages/types/menu';
 import { currentCategoryAtom } from '@/src/atoms/currentCategory';
 import { getMenusInCategory, getRecommendedMenus } from '@/src/lib/menu';
 import { useSetAtom } from 'jotai';

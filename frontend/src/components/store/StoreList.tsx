@@ -1,4 +1,4 @@
-import { useStores } from '@/pages/queries/stores';
+import { useStores } from '@/src/pages/queries/stores';
 import { StoreFilters } from './StoreFilters';
 import { StoreItem } from './StoreItem';
 import { useInfiniteScroll } from '@/src/lib/useInfiniteScroll';

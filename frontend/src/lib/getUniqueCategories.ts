@@ -1,4 +1,4 @@
-import { Menu } from '@/pages/types/menu';
+import { Menu } from '@/src/pages/types/menu';
 
 export const getUniqueCategories = (menus: Menu[]) => {
   const categories = new Set(menus.map((menu) => menu.category));

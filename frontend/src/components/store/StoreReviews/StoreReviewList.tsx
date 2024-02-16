@@ -1,4 +1,4 @@
-import { useStoreReviews } from '@/pages/queries/storeReviews';
+import { useStoreReviews } from '@/src/pages/queries/storeReviews';
 import { ReviewSort } from '@/src/constants/review';
 import { useInfiniteScroll } from '@/src/lib/useInfiniteScroll';
 import { useState } from 'react';

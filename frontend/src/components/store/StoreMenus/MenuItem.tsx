@@ -1,4 +1,4 @@
-import { Menu } from '@/pages/types/menu';
+import { Menu } from '@/src/pages/types/menu';
 import {
   addMenuToCartAtom,
   cartAtom,

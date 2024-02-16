@@ -1,4 +1,4 @@
-import { useStore } from '@/pages/queries/stores';
+import { useStore } from '@/src/pages/queries/stores';
 import { storeIdAtom } from '@/src/atoms/storeId';
 import { useAtomValue } from 'jotai';
 import { BackButton } from '../../common/BackButton';

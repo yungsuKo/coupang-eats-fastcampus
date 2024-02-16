@@ -1,7 +1,7 @@
 import { StoreFilters } from './StoreFilters';
 import { StoreItem } from './StoreItem';
 import { InfiniteData } from '@tanstack/react-query';
-import { Store } from '@/pages/types/store';
+import { Store } from '@/src/pages/types/store';
 import { RefObject } from 'react';
 
 export const StoreListUI = ({

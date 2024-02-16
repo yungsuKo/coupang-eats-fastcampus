@@ -1,7 +1,7 @@
-import { useOrder } from '@/pages/queries/order';
-import { useSubmitReview } from '@/pages/queries/review';
-import { useImageUpload } from '@/pages/queries/upload';
-import { ReviewMenu } from '@/pages/types/review';
+import { useOrder } from '@/src/pages/queries/order';
+import { useSubmitReview } from '@/src/pages/queries/review';
+import { useImageUpload } from '@/src/pages/queries/upload';
+import { ReviewMenu } from '@/src/pages/types/review';
 import { CloseButton } from '@/src/components/common/CloseButton';
 import { StarRatingInput } from '@/src/components/common/StarRatingInput';
 import { GetServerSideProps } from 'next';

@@ -1,4 +1,4 @@
-import { useStore } from '@/pages/queries/stores';
+import { useStore } from '@/src/pages/queries/stores';
 import { BackButton } from '../../common/BackButton';
 import { StarRating } from '../../common/StarRating';
 

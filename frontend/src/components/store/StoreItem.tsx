@@ -1,4 +1,4 @@
-import { Store } from '@/pages/types/store';
+import { Store } from '@/src/pages/types/store';
 import Link from 'next/link';
 import { useMemo } from 'react';
 import { StarsAndReviews } from '../common/StarsAndReviews';

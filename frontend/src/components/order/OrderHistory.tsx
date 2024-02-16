@@ -1,4 +1,4 @@
-import { OrderHistory as OrderHistoryType } from '@/pages/types/order';
+import { OrderHistory as OrderHistoryType } from '@/src/pages/types/order';
 import { KRW } from '@/src/lib/currency';
 import { getTotalPrice } from '@/src/lib/menu';
 import { getOrderStatus } from '@/src/lib/orderStatus';

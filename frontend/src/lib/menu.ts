@@ -1,6 +1,6 @@
-import { Menu } from '@/pages/types/menu';
+import { Menu } from '@/src/pages/types/menu';
 import { CartMenu } from '../atoms/cart';
-import { OrderMenu } from '@/pages/types/order';
+import { OrderMenu } from '@/src/pages/types/order';
 
 export const getRecommendedMenus = (menus: Menu[]) => {
   return menus.filter((menu) => menu.isRecommended);

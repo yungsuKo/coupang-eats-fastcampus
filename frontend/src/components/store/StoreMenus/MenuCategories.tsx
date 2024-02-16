@@ -3,7 +3,7 @@ import { useAtomValue } from 'jotai';
 import { ScrollTab } from '../../common/ScrollTabs';
 import Link from 'next/link';
 import { currentCategoryAtom } from '@/src/atoms/currentCategory';
-import { useStoreMenus } from '@/pages/queries/menus';
+import { useStoreMenus } from '@/src/pages/queries/menus';
 import { getUniqueCategories } from '@/src/lib/getUniqueCategories';
 
 export const MenuCategories = () => {
